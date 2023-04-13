@@ -18,6 +18,8 @@ class _AnimatedCircleBodyState extends State<AnimatedCircleBody>
     with SingleTickerProviderStateMixin {
   Offset offset = Offset.zero;
 
+  /// I had to use "late" keyword as I will defining it in initState
+  /// I wouldn't make it nullable as I will defining it for sure
   // ignore: avoid-late-keyword
   late AnimationController animationController;
 
