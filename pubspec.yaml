@@ -1,0 +1,47 @@
+name: color_generator
+description: Color generator app. A test task for solid software.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.5 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.2
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.13.0
+  flutter_native_splash: ^2.2.19
+  flutter_test:
+    sdk: flutter
+  solid_lints: ^0.0.14
+
+flutter_icons:
+  # Command Line to change the icon
+  # flutter pub run flutter_launcher_icons:main
+  android: "ic_launcher"
+  ios: true
+  image_path: "assets/icon.png"
+
+flutter_native_splash:
+  # Command Line to set native splash
+  # flutter pub run flutter_native_splash:create
+  #
+  # color & background_image attribute
+  #   - color : to select splash background color
+  #   - background_image : to select splash background image
+  #   - choose between it or background_image
+  color: "#141824"
+  # center splash icon
+  image: assets/logo.png
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/
